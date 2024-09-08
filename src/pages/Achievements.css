@@ -1,0 +1,68 @@
+/* Achievements.css */
+
+/* Container Styles */
+.achievements-container {
+    padding: 30px;
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .achievements-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Title Styles */
+  .achievements-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--accent-color);
+    display: inline-block;
+  }
+  
+  /* Achievement Card Styles */
+  .achievement-card {
+    background-color: var(--card-bg-color);
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+    overflow: hidden;
+  }
+  
+  .achievement-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--primary-color);
+  }
+  
+  /* Card Title Styling */
+  .card-title {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .card-title:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Card Text Styling */
+  .card-text {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Hover Effects for Achievements */
+  .achievement-card:hover .card-title {
+    color: var(--accent-color);
+  }
+  
+  .achievement-card:hover .card-text {
+    color: var(--text-hover-color);
+  }
+  

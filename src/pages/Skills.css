@@ -1,0 +1,59 @@
+/* Skills.css */
+
+/* Container Styling */
+.skills-container {
+    background-color: var(--card-bg-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .skills-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Title Styling */
+  .skills-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--accent-color);
+    display: inline-block;
+  }
+  
+  /* Skill Item Styling */
+  .skill-item {
+    margin-bottom: 20px;
+  }
+  
+  /* Skill Name Styling */
+  .skill-name {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Skill Bar Styling */
+  .skill-bar {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 20px;
+  }
+  
+  /* Skill Fill Animation */
+  .skill-fill {
+    background-color: var(--primary-color);
+    height: 100%;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  /* Hover Effect on Skill Fill */
+  .skill-item:hover .skill-fill {
+    background-color: var(--accent-color);
+  }
+  

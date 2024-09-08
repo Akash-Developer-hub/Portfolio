@@ -1,0 +1,35 @@
+/* About.css */
+
+.about-container {
+    background: var(--card-bg-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--accent-color);
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  
+  .about-description {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    line-height: 1.8;
+  }
+  
+  .schooling {
+    font-size: 1rem;
+    color: var(--light-text-color);
+    margin-top: 10px;
+  }
+  
