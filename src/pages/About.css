@@ -1,35 +1,68 @@
 /* About.css */
 
+/* Container Styles */
 .about-container {
-    background: var(--card-bg-color);
     padding: 30px;
+    background-color: var(--card-bg-color);
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .about-container:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   }
   
-  .section-title {
-    font-size: 2.2rem;
+  /* Title Styles */
+  .about-title {
+    font-size: 2rem;
     color: var(--primary-color);
+    margin-bottom: 20px;
     border-bottom: 3px solid var(--accent-color);
     display: inline-block;
-    margin-bottom: 15px;
   }
   
-  .about-description {
-    font-size: 1.1rem;
-    color: var(--text-color);
-    line-height: 1.8;
+  /* About Content Layout */
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
   }
   
-  .schooling {
+  /* Profile Image Styling */
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* About Text Styling */
+  .about-text {
+    flex: 1;
     font-size: 1rem;
-    color: var(--light-text-color);
-    margin-top: 10px;
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-image {
+      margin-bottom: 20px;
+    }
   }
   
